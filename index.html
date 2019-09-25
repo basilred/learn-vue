@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Easy trip</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{message}}
+    </div>
+
+    <div id="app-2">
+      <span v-bind:title="message">
+        Наведи на меня курсор на пару секунд,
+        чтобы увидеть динамически связанное значение title!
+      </span>
+    </div>
+
+    <div id="app-3">
+      <span v-if="seen">Сейчас меня видно</span>
+    </div>
+
+    <div id="app-4">
+      <ol>
+        <li v-for="todo in todos">{{ todo.text }}</li>
+      </ol>
+    </div>
+
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage" type="button" name="button">Перевернуть сообщение</button>
+    </div>
+
+    <div id="app-6">
+      <p>{{ message }}</p>
+      <input v-model="message" type="text" name="" value="">
+    </div>
+
+    <script src="./src/app.js" charset="utf-8"></script>
+  </body>
+</html>
