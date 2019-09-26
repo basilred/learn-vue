@@ -66,3 +66,15 @@ const app7 = new Vue({
     ]
   }
 });
+
+
+const obj = {
+  foo: 'bar',
+};
+
+Object.freeze(obj);
+
+new Vue({
+  el: '#app-8',
+  data: obj,
+});

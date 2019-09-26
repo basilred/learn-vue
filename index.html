@@ -53,6 +53,12 @@
       </ol>
     </div>
 
+    <div id="app-8">
+      <p>{{ foo }}</p>
+      <!-- мы теперь не можем обновить `foo`! -->
+      <button v-on:click="foo = 'baz'">Изменить</button>
+    </div>
+
     <script src="./src/app.js" charset="utf-8"></script>
   </body>
 </html>
