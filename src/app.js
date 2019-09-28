@@ -5,6 +5,8 @@ const app = new Vue({
   }
 });
 
+app.message = 'Hey!';
+
 const app2 = new Vue({
   el: '#app-2',
   data: {
