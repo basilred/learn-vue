@@ -59,6 +59,11 @@
       <button v-on:click="foo = 'baz'">Изменить</button>
     </div>
 
+    <div id="app-9">
+      <p>Двойные фигурные скобки: {{ rawHtml }}</p>
+      <p>Директива v-html: <span v-html="rawHtml"></span></p>
+    </div>
+
     <script src="./src/app.js" charset="utf-8"></script>
   </body>
 </html>
