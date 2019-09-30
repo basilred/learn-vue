@@ -67,6 +67,9 @@
         type="button"
         name="button"
       >Button</button>
+      <div v-bind:id="'list-' + id" class="">
+        {{ ok ? 'YES' : 'NO' }}
+      </div>
     </div>
 
     <script src="./src/app.js" charset="utf-8"></script>
