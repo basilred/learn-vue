@@ -70,6 +70,9 @@
       <div v-bind:id="'list-' + id" class="">
         {{ ok ? 'YES' : 'NO' }}
       </div>
+      <div v-bind:[someAttr]="'color:' + value">
+        This text is {{value}} colored
+      </div>
     </div>
 
     <script src="./src/app.js" charset="utf-8"></script>

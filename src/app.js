@@ -89,5 +89,7 @@ const app9 = new Vue({
     isButtonDisabled: true,
     id: 'knopki',
     ok: true,
+    someattr: 'style',
+    value: 'orange',
   }
 });
