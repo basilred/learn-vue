@@ -85,6 +85,7 @@ new Vue({
 const app9 = new Vue({
   el: '#app-9',
   data: {
-    rawHtml: '<span style="color:red">Текст должен быть красным</span>'
+    rawHtml: '<span style="color:red">Текст должен быть красным</span>',
+    isButtonDisabled: true,
   }
 });
