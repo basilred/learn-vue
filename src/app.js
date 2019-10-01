@@ -93,3 +93,22 @@ const app9 = new Vue({
     value: 'orange',
   }
 });
+
+
+const example = new Vue({
+  el: '#example',
+  data: {
+    message: 'Hello',
+  },
+  computed: {
+    // геттер вычисляемого значения
+    reversedMessage: function() {
+      // `this` указывает на экземпляр example
+      return this.message.split('').reverse().join('');
+    },
+  }
+});
+
+console.log(example.reversedMessage);
+example.message = 'Good bye!';
+console.log(example.reversedMessage);
