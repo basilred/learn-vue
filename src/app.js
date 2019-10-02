@@ -112,3 +112,17 @@ const example = new Vue({
 console.log(example.reversedMessage);
 example.message = 'Good bye!';
 console.log(example.reversedMessage);
+
+
+const demo = new Vue({
+  el: '#demo',
+  data: {
+    firstName: 'Foo',
+    lastName: 'Bar',
+  },
+  computed: {
+    fullName: function() {
+      return this.firstName + ' ' + this.lastName;
+    }
+  }
+});
