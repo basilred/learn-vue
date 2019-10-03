@@ -86,6 +86,20 @@
       {{ fullName }}
     </div>
 
+    <div id="watch-example">
+      <p>
+        Задайте вопрос, на который можно ответить «да» или «нет»
+        <input type="text" v-model="question">
+      </p>
+      <p>{{ answer }}</p>
+    </div>
+
+    <!-- Поскольку уже существует обширная экосистема ajax-библиотек -->
+    <!-- и библиотек функций общего назначения, ядро Vue может       -->
+    <!-- оставаться маленьким и не изобретать их заново. Кроме того, -->
+    <!-- это позволяет вам использовать только знакомые инструменты. -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
     <script src="./src/app.js" charset="utf-8"></script>
   </body>
 </html>
