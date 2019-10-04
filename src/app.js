@@ -2,8 +2,10 @@ const app = new Vue({
   el: '#app',
   data: {
     message: 'Hey, Vue!',
-    isActive: true,
-    hasError: false,
+    classObject: {
+      active: true,
+      'text-danger': false,
+    },
   }
 });
 
