@@ -3,6 +3,7 @@ const app = new Vue({
   data: {
     message: 'Hey, Vue!',
     isActive: true,
+    hasError: false,
   }
 });
 
