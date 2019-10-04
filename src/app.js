@@ -1,7 +1,8 @@
 const app = new Vue({
   el: '#app',
   data: {
-    message: 'Hey, Vue!'
+    message: 'Hey, Vue!',
+    isActive: true,
   }
 });
 

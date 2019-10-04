@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" charset="utf-8"></script>
   </head>
   <body>
-    <div id="app" v-once>
+    <div id="app" v-once v-bind:class="{ active: isActive }">
       {{message}}
     </div>
 
@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    
+
     <!-- Вычисляемые свойства и слежение -->
     <div id="example">
       <p>Изначальное сообщение: «{{ message }}»</p>
