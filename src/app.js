@@ -2,10 +2,16 @@ const app = new Vue({
   el: '#app',
   data: {
     message: 'Hey, Vue!',
-    classObject: {
-      active: true,
-      'text-danger': false,
-    },
+    isActive: true,
+    error: null,
+  },
+  computed: {
+    classObject: function() {
+      return {
+        active: this.isActive && !this.error,
+        'text-danger': this.hasError && this.error.type === 'fatal',
+      }
+    }
   }
 });
 
