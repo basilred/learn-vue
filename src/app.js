@@ -4,6 +4,10 @@ const app = new Vue({
     message: 'Hey, Vue!',
     isActive: true,
     errorClass: 'text-danger',
+    styleObject: {
+      fontSize: '24px',
+      color: 'blue',
+    },
   },
 });
 
