@@ -2,7 +2,7 @@ const app = new Vue({
   el: '#app',
   data: {
     message: 'Hey, Vue!',
-    activeClass: 'active',
+    isActive: true,
     errorClass: 'text-danger',
   },
 });
