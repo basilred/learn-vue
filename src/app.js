@@ -183,3 +183,12 @@ const watchExampleVM = new Vue({
     }
   }
 });
+
+
+const conditional = new Vue({
+  el: '.conditional',
+  data: {
+    awesome: true,
+    ok: true,
+  },
+});

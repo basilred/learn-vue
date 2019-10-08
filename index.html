@@ -12,8 +12,16 @@
       v-bind:class="[{ active: isActive }, errorClass]"
       v-bind:style="styleObject">
       {{message}}
+    </div>
+
+    <div class="conditional">
       <h3 v-if="awesome">Vue восхитителен!</h3>
       <h3 v-else>О, нет 😢</h3>
+      <template v-if="ok">
+        <h1>Title</h1>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+      </template>
     </div>
 
     <div id="app-2">
